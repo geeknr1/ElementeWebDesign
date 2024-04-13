@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Burbea Alexandru - The story of the beginning of the greatest empire the world's ever seen </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header>
+	<h1> THE FORM PAGE: </h1>
+</header>
+
+<h2> Home </h2>
+	<p> You can return to the home page by accessing the following link:<a href = "file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Into_History.html"> Home page </a></p>
+
+<hr>
+
+<h1>Light/Dark mode</h1>
+<button onclick="myFunction()">Switch Mode</button>
+
+<script>
+	function myFunction(){
+		let element = document.body;
+		element.classList.toggle("dark");
+	}
+</script>
+
+<br>
+<form style="text-align: center;">
+	<p><label>First name: <input name="first_name" /></label></p>
+	<p><label>Last name: <input name="last_name" /></label></p>
+	<p>Gender:
+		<label><input type="radio" name = "Gender" value = "male" />Male</label>
+		<label><input type="radio" name = "Gender" value = "female" />Female</label>
+	</p>
+	<p><label>Email:<input type="email" name="email" /></label></p>
+	<p><label>Date of Birth:<input type="date" name="birthDate"></label></p>
+	<p><label>Address: <textarea name="address" cols="30" rows="3"> </textarea>
+	</label></p>
+	<p><button type="submit">Submit</button></p>
+</form>
+		
+</body>
+</html>
