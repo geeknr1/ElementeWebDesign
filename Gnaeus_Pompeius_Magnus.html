@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figures from the Roman Empire</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">INTO HISTORY</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Into_History.html">Home page</a></li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/About_me.html">About me</a></li>
+			<li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/form_page.html"> Form page</a></li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_First_Triumvirate.html" class="dropbtn">The First Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Julius_Caesar.html">Gaius Julius Caesar</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Gnaeus_Pompeius_Magnus.html">Gnaeus Pompeius Magnus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Licinius_Crassus.html">Marcus Licinius Crassus</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_Second_Triumvirate.html" class="dropbtn">The Second Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Mark_Anthony.html">Mark Anthony</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Lepidus.html">Lepidus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Octavian.html">Octavian</a>
+                </div>
+            </li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Cleopatra.html">Cleopatra</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Greatest Roman Emperors</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Aurelius.html">Marcus Aurelius</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Constantine.html">The Emperor Constantine</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Trajan.html">The Emperor Trajan</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<script src="scripts.js"></script>
+<hr>
+
+<h1>Light/Dark mode</h1>
+<button onclick="myFunction()">Switch Mode</button>
+
+<script>
+	function myFunction(){
+		let element = document.body;
+		element.classList.toggle("dark");
+		
+		if(element.classList.contains("dark")){
+			localStorage.setItem("mode","dark");
+		}
+		else{
+			localStorage.setItem("mode","light");
+		}
+	}
+		
+		document.addEventListener("DOMContentLoaded", () => {
+			let mode = localStorage.getItem("mode");
+			
+			if(mode == "dark"){
+					document.body.classList.add("dark");
+			}
+		});
+		
+		document.addEventListener("DOMContentLoaded", function() {
+            const paragraphs = document.querySelectorAll('p');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            paragraphs.forEach(paragraph => {
+                observer.observe(paragraph);
+            });
+        });
+</script>
+
+<h1> Gnaeus Magnus Pompey, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
+
+<h2 class = "box0"> General stuff </h2>
+
+<p> Gnaeus Pompeius Magnus (29 September 106 BC – 28 September 48 BC), known in English as Pompey or Pompey the Great, was a general and statesman of the Roman Republic. He played a significant role in the transformation of Rome from republic to empire. Early in his career, he was a partisan and protégé of the Roman general and dictator Sulla; later, he became the political ally, and finally the enemy, of Julius Caesar. </p>
+
+<p> A member of the senatorial nobility, Pompey entered into a military career while still young. He rose to prominence serving the dictator Sulla as a commander in the civil war of 83–81 BC. Pompey's success as a general while young enabled him to advance directly to his first consulship without following the traditional cursus honorum (the required steps to advance in a political career). He was elected as consul on three occasions (70, 55, 52 BC). He celebrated three triumphs, served as a commander in the Sertorian War, the Third Servile War, the Third Mithridatic War, and in various other military campaigns. Pompey's early success earned him the cognomen Magnus – "the Great" – after his boyhood hero Alexander the Great. His adversaries gave him the nickname adulescentulus carnifex ("teenage butcher") for his ruthlessness. </p>
+
+<p> In 60 BC, Pompey joined Crassus and Caesar in the informal political alliance known as the First Triumvirate, cemented by Pompey's marriage with Caesar's daughter, Julia. After the deaths of Julia and Crassus (in 54 and 53 BC), Pompey switched to the political faction known as the optimates—a conservative faction of the Roman Senate. Pompey and Caesar then began contending for leadership of the Roman state in its entirety, eventually leading to Caesar's Civil War. Pompey was defeated at the Battle of Pharsalus in 48 BC, and he sought refuge in Ptolemaic Egypt, where he was assassinated by the courtiers of Ptolemy XIII. </p>
+<br>
+<h2 class = "box0"> Phisical appearance </h2>
+	<p> Pompei has a thin mouth, a bulbous nose, and smaller eyes and ears with upraised eyebrows. His head is wider at the top and gets narrower down to the chin. Pompey has short cropped hair that is raised in the middle in a cowlick. He looks straight ahead. </p>
+<br>
+<h2> Personal life + Family </h2>
+	<b> Pompei's wives: </b>
+	<ul> 
+	<li> Antistia. They married in 86 BC and divorced in 82 BC. By her he had no issue. </li>
+	<li> Aemilia Scaura. When they married in 82 BC, Aemilia was pregnant by her former husband and died in childbirth in the same year. </li>
+	<li> 
+	Mucia Tertia. They married in 79 BC and divorced in 61 BC. By her he had two sons and a daughter:
+		<ul> 
+			<li> Gnaeus Pompeus </li>
+			<li> Pompeia </li>
+			<li> Sextus Pompeus </li>
+		</ul>
+	</li>
+	<li> Julia, the daughter of Julius Caesar. They married in 59 BC and she died in childbirth in 54 BC. The child died a few days after birth. </li>
+	<li> Cornelia Metella. They married in 52 BC and had no children together. </li>
+	</ul>
+<br>
+<h2 class = "box0"> Quotes </h2>
+	<ul> 
+		<li><cite> Stop quoting laws, we carry weapons! </cite></li>
+		<li><cite> More people worship the rising than the setting sun. </cite></li>
+		<li><cite> To sail is necessary, to live is not. </cite></li>
+		<li><cite> And besides, he was what? 25? He couldn't stand for a Praetorship even if he wanted to. But like I say, I don't care. I'm fine with it. I'm happy for him. Hooray for Pompey. Pompey the Great. </cite></li>
+	</ul>
+	
+
+</body>
+</html>

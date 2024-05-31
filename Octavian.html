@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figures from the Roman Empire</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">INTO HISTORY</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Into_History.html">Home page</a></li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/About_me.html">About me</a></li>
+			<li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/form_page.html"> Form page</a></li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_First_Triumvirate.html" class="dropbtn">The First Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Julius_Caesar.html">Gaius Julius Caesar</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Gnaeus_Pompeius_Magnus.html">Gnaeus Pompeius Magnus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Licinius_Crassus.html">Marcus Licinius Crassus</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_Second_Triumvirate.html" class="dropbtn">The Second Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Mark_Anthony.html">Mark Anthony</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Lepidus.html">Lepidus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Octavian.html">Octavian</a>
+                </div>
+            </li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Cleopatra.html">Cleopatra</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Greatest Roman Emperors</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Aurelius.html">Marcus Aurelius</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Constantine.html">The Emperor Constantine</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Trajan.html">The Emperor Trajan</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<script src="scripts.js"></script>
+<hr>
+<hr>
+
+<h1>Light/Dark mode</h1>
+<button onclick="myFunction()">Switch Mode</button>
+
+<script>
+	function myFunction(){
+		let element = document.body;
+		element.classList.toggle("dark");
+		
+		if(element.classList.contains("dark")){
+			localStorage.setItem("mode","dark");
+		}
+		else{
+			localStorage.setItem("mode","light");
+		}
+	}
+		
+		document.addEventListener("DOMContentLoaded", () => {
+			let mode = localStorage.getItem("mode");
+			
+			if(mode == "dark"){
+					document.body.classList.add("dark");
+			}
+		});
+		
+		document.addEventListener("DOMContentLoaded", function() {
+            const paragraphs = document.querySelectorAll('p');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            paragraphs.forEach(paragraph => {
+                observer.observe(paragraph);
+            });
+        });
+</script>
+
+<h1> Octavian, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
+<h2 class = "box0"> General stuff </h2>
+
+<p> Gaius Julius Caesar Augustus (born Gaius Octavius; 23 September 63 BC – 19 August AD 14), also known as Octavian, was the founder of the Roman Empire. He reigned as the first Roman emperor from 27 BC until his death in AD 14. The reign of Augustus initiated an imperial cult, as well as an era associated with imperial peace (the Pax Romana or Pax Augusta) in which the Roman world was largely free of armed conflict (aside from expansionary wars and the Year of the Four Emperors, the latter of which occurring after Augustus' reign). The Principate system of government was established during his reign and lasted until the Crisis of the Third Century. </p>
+
+<p> Octavian was born into an equestrian branch of the plebeian gens Octavia. His maternal great-uncle Julius Caesar was assassinated in 44 BC, and Octavian was named in Caesar's will as his adopted son and heir; as a result, he inherited Caesar's name, estate, and the loyalty of his legions. He, Mark Antony, and Marcus Lepidus formed the Second Triumvirate to defeat the assassins of Caesar. Following their victory at the Battle of Philippi (42 BC), the Triumvirate divided the Roman Republic among themselves and ruled as de facto dictators. The Triumvirate was eventually torn apart by the competing ambitions of its members; Lepidus was exiled in 36 BC, and Antony was defeated by Octavian at the Battle of Actium in 31 BC. Antony and his wife Cleopatra, the Ptolemaic queen of Egypt, killed themselves during Octavian's invasion of Egypt, which then became a Roman province. </p>
+
+<p> After the demise of the Second Triumvirate, Augustus restored the outward facade of the free republic, with governmental power vested in the Roman Senate, the executive magistrates and the legislative assemblies, yet he maintained autocratic authority by having the Senate grant him lifetime tenure as commander-in-chief, tribune and censor. A similar ambiguity is seen in his chosen names, the implied rejection of monarchical titles whereby he called himself Princeps Civitatis (First Citizen) juxtaposed with his adoption of the title Augustus. </p>
+
+<p> Augustus dramatically enlarged the empire, annexing Egypt, Dalmatia, Pannonia, Noricum, and Raetia, expanding possessions in Africa, and completing the conquest of Hispania, but he suffered a major setback in Germania. Beyond the frontiers, he secured the empire with a buffer region of client states and made peace with the Parthian Empire through diplomacy. He reformed the Roman system of taxation, developed networks of roads with an official courier system, established a standing army, established the Praetorian Guard as well as official police and fire-fighting services for Rome, and rebuilt much of the city during his reign. Augustus died in AD 14 at age 75, probably from natural causes. Persistent rumors, substantiated somewhat by deaths in the imperial family, have claimed his wife Livia poisoned him. He was succeeded as emperor by his adopted son Tiberius, Livia's son and former husband of Augustus' only biological child Julia. </p>
+<br>
+<h2 class = "box0"> Family + Personal Life </h2>
+<p> He was born in Rome on 23 September 63 BC. His paternal family was from the Volscian town of Velletri, approximately 40 kilometres (25 mi) south-east of the city. He was born at Ox Head, a small property on the Palatine Hill, very close to the Roman Forum. In his childhood, he received the cognomen "Thurinus", possibly commemorating his father's victory at Thurii over a rebellious band of slaves which occurred a few years after his birth. Suetonius wrote: "There are many indications that the Octavian family was in days of old a distinguished one at Velitrae; for not only was a street in the most frequented part of town long ago called Octavius, but an altar was shown there besides, consecrated by an Octavius. This man was leader in a war with a neighbouring town ..." </p>
+<br>
+<h2> Phisical Appearance </h2>
+<p> His biographer Suetonius, writing about a century after Augustus's death, described his appearance as: "... unusually handsome and exceedingly graceful at all periods of his life, though he cared nothing for personal adornment. He was so far from being particular about the dressing of his hair, that he would have several barbers working in a hurry at the same time, and as for his beard he now had it clipped and now shaved, while at the very same time he would either be reading or writing something ... He had clear, bright eyes ... His teeth were wide apart, small, and ill-kept; his hair was slightly curly and inclined to golden;[n] his eyebrows met. His ears were of moderate size, and his nose projected a little at the top and then bent ever so slightly inward. His complexion was between dark and fair. He was short of stature, although Julius Marathus, his freedman and keeper of his records, says that he was five feet and nine inches (just under 5 ft. 7 in., or 1.70 meters, in modern height measurements), but this was concealed by the fine proportion and symmetry of his figure, and was noticeable only by comparison with some taller person standing beside him...",[286] adding that "his shoes [were] somewhat high-soled, to make him look taller than he really was".[287] Scientific analysis of traces of paint found in his official statues shows that he most likely had light brown hair and eyes (his hair and eyes were depicted as the same color). </p>
+
+<p> His official images were very tightly controlled and idealized, drawing from a tradition of Hellenistic portraiture rather than the tradition of realism in Roman portraiture. He first appeared on coins at the age of 19, and from about 29 BC "the explosion in the number of Augustan portraits attests a concerted propaganda campaign aimed at dominating all aspects of civil, religious, economic and military life with Augustus's person." The early images did indeed depict a young man, but although there were gradual changes his images remained youthful until he died in his seventies, by which time they had "a distanced air of ageless majesty", according to the classicist R. R. R. Smith. Among the best known of many surviving portraits are the Augustus of Prima Porta, the image on the Ara Pacis, and the Via Labicana Augustus, which depicts him in his role as pontifex maximus. Several cameo portraits include the Blacas Cameo and Gemma Augustea. </p>
+
+
+</body>
+</html>

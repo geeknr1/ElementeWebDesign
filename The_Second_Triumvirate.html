@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figures from the Roman Empire</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">INTO HISTORY</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Into_History.html">Home page</a></li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/About_me.html">About me</a></li>
+			<li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/form_page.html"> Form page</a></li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_First_Triumvirate.html" class="dropbtn">The First Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Julius_Caesar.html">Gaius Julius Caesar</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Gnaeus_Pompeius_Magnus.html">Gnaeus Pompeius Magnus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Licinius_Crassus.html">Marcus Licinius Crassus</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_Second_Triumvirate.html" class="dropbtn">The Second Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Mark_Anthony.html">Mark Anthony</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Lepidus.html">Lepidus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Octavian.html">Octavian</a>
+                </div>
+            </li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Cleopatra.html">Cleopatra</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Greatest Roman Emperors</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Aurelius.html">Marcus Aurelius</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Constantine.html">The Emperor Constantine</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Trajan.html">The Emperor Trajan</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<script src="scripts.js"></script>
+<hr>
+<hr>
+
+<h1>Light/Dark mode</h1>
+<button onclick="myFunction()">Switch Mode</button>
+
+<script>
+	function myFunction(){
+		let element = document.body;
+		element.classList.toggle("dark");
+		
+		if(element.classList.contains("dark")){
+			localStorage.setItem("mode","dark");
+		}
+		else{
+			localStorage.setItem("mode","light");
+		}
+	}
+		
+		document.addEventListener("DOMContentLoaded", () => {
+			let mode = localStorage.getItem("mode");
+			
+			if(mode == "dark"){
+					document.body.classList.add("dark");
+			}
+		});
+		
+				document.addEventListener("DOMContentLoaded", function() {
+            const paragraphs = document.querySelectorAll('p');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            paragraphs.forEach(paragraph => {
+                observer.observe(paragraph);
+            });
+        });
+</script>
+
+<h1> The Second Triumvirate, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
+<h2 class = "box0"> General stuff </h2>
+
+<p> The Second Triumvirate was an extraordinary commission and magistracy created for Mark Antony, Lepidus, and Octavian to give them practically absolute power. It was formally constituted by law on 27 November 43 BC with a term of five years; it was renewed in 37 BC for another five years before expiring in 32 BC. Constituted by the lex Titia, the triumvirs were given broad powers to make or repeal legislation, issue judicial punishments without due process or right of appeal, and appoint all other magistrates. The triumvirs also split the Roman world into three sets of provinces. </p>
+
+<p> The triumvirate, formed in the aftermath of a conflict between Antony and the senate, emerged as a force to reassert Caesarian control over the western provinces and wage war on the liberatores led by the men who assassinated Julius Caesar. After proscriptions, purging the senatorial and equestrian orders, and a brutal civil war, the liberatores were defeated at the Battle of Philippi. After Philippi, Antony and Octavian took the east and west, respectively, with Lepidus confined to Africa. </p>
+
+<p> Octavian and Antony were pushed to cooperation, in part by their soldiers, and the triumvirs had their legal arrangement renewed for another five years in 37 BC. Eventually, after Antony's defeat in Parthia and Octavian's victory over remnant Pompeians in Sicily, Octavian forced Lepidus from the triumvirate in 36 BC. Relations between the two remaining triumvirs broke down in the late 30s BC before they fought a final war, from which Octavian emerged the victor. </p>
+
+<h2 class = "box0"> Naming </h2>
+<p> The name "Second Triumvirate" is a modern misnomer derived from the branding of the political alliance between Pompey, Crassus, and Caesar (created c. 59 BC) as the "First" Triumvirate. This nomenclature was unknown during and before the Renaissance and was first attested in the late 17th century, coming into widespread use only in the following century. Recent books have started to avoid the traditional nomenclature of "First" and "Second" Triumvirates. The Oxford Classical Dictionary, for example, warns "'First' and 'Second Triumvirate' are modern and misleading terms". </p>
+</body>
+</html>

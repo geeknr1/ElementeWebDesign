@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figures from the Roman Empire</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">INTO HISTORY</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Into_History.html">Home page</a></li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/About_me.html">About me</a></li>
+			<li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/form_page.html"> Form page</a></li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_First_Triumvirate.html" class="dropbtn">The First Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Julius_Caesar.html">Gaius Julius Caesar</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Gnaeus_Pompeius_Magnus.html">Gnaeus Pompeius Magnus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Licinius_Crassus.html">Marcus Licinius Crassus</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_Second_Triumvirate.html" class="dropbtn">The Second Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Mark_Anthony.html">Mark Anthony</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Lepidus.html">Lepidus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Octavian.html">Octavian</a>
+                </div>
+            </li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Cleopatra.html">Cleopatra</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Greatest Roman Emperors</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Aurelius.html">Marcus Aurelius</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Constantine.html">The Emperor Constantine</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Trajan.html">The Emperor Trajan</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<script src="scripts.js"></script>
+<hr>
+<hr>
+
+<h1>Light/Dark mode</h1>
+<button onclick="myFunction()">Switch Mode</button>
+
+<script>
+	function myFunction(){
+		let element = document.body;
+		element.classList.toggle("dark");
+		
+		if(element.classList.contains("dark")){
+			localStorage.setItem("mode","dark");
+		}
+		else{
+			localStorage.setItem("mode","light");
+		}
+	}
+		
+		document.addEventListener("DOMContentLoaded", () => {
+			let mode = localStorage.getItem("mode");
+			
+			if(mode == "dark"){
+					document.body.classList.add("dark");
+			}
+		});
+		
+		document.addEventListener("DOMContentLoaded", function() {
+            const paragraphs = document.querySelectorAll('p');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            paragraphs.forEach(paragraph => {
+                observer.observe(paragraph);
+            });
+        });
+</script>
+
+<h1> Marcus Aemilius Lepidus, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
+<h2 class = "box0"> General stuff </h2>
+
+<p> Marcus Aemilius Lepidus was a Roman general and statesman who formed the Second Triumvirate alongside Octavian and Mark Antony during the final years of the Roman Republic. Lepidus had previously been a close ally of Julius Caesar. He was also the last pontifex maximus before the Roman Empire, and (presumably) the last interrex and magister equitum to hold military command. </p>
+
+<p> Though he was an able military commander and proved a useful partisan of Caesar, Lepidus has always been portrayed as the least influential member of the Triumvirate. He typically appears as a marginalised figure in depictions of the events of the era, most notably in Shakespeare's plays. While some scholars have endorsed this view, others argue that the evidence is insufficient to discount the distorting effects of propaganda by his opponents, principally Cicero and, later, Augustus. </p>
+<br>
+<h2 class = "box0"> Family + Personal Life </h2>
+<p> Lepidus was the son of Marcus Aemilius Lepidus (consul in 78 BC); his mother may have been a daughter of Lucius Appuleius Saturninus. His brother was Lucius Aemilius Lepidus Paullus (consul in 50). His father was the first leader of the revived populares faction after the death of Sulla, and led an unsuccessful rebellion against the optimates in 78–77 (he was defeated just outside of Rome and fled to Sardinia where he died in 77).
+
+<p> Lepidus married Junia Secunda, half-sister of Marcus Junius Brutus and sister of Marcus Junius Silanus, Junia Prima and Junia Tertia, Cassius Longinus's wife. Lepidus and Junia Secunda had at least one child, Marcus Aemilius Lepidus the Younger. </p>
+
+<h2 class = "box0"> The aftermath of Caesar's death </h2>
+<p> As soon as Lepidus learned of Caesar's murder, he acted decisively to maintain order by moving troops to the Campus Martius. He proposed using his army to punish Caesar's killers, but was dissuaded by Antony and Aulus Hirtius. Lepidus and Antony both spoke in the Senate the following day, accepting an amnesty for the assassins in return for preservation of their offices and Caesar's reforms. Lepidus also obtained the post of pontifex maximus, succeeding Caesar. </p>
+
+<p> At this point, Pompey's surviving son Sextus Pompey tried to take advantage of the turmoil to threaten Spain. Lepidus was sent to negotiate with him. Lepidus successfully negotiated an agreement with Sextus that maintained the peace. The Senate voted him a public thanksgiving festival. Lepidus thereafter administered both Hispania and Narbonese Gaul as proconsul. </p>
+
+<p> When Antony attempted to take control of Cisalpine Gaul (northern Italy) by force and displace Decimus Brutus, the Senate, led by Cicero, called on Lepidus to support Brutus – one of Caesar's killers. Lepidus prevaricated, recommending negotiation with Antony. After Antony's defeat at the Battle of Mutina, the Senate sent word that Lepidus' troops were no longer needed. Antony, however, marched towards Lepidus's province with his remaining forces. Lepidus continued to assure the Senate of his loyalty, but engaged in negotiations with Antony. When the two armies met, large portions of Lepidus's forces joined up with Antony. Lepidus negotiated an agreement with him, while claiming to the Senate that he had no choice. It is unclear whether Lepidus' troops forced him to join with Antony, whether that was always Lepidus's plan, or whether he arranged matters to gauge the situation and make the best deal. </p>
+
+
+</body>
+</html>

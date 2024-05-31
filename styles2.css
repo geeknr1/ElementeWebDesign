@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+	
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	
+	margin:0;
+	height: 100vh;
+	
+	.box0 {
+	width: 1000px;
+	height: 35px;
+	background-color: white;
+	transition: background-color 0.3s ease;
+	animation: moveAnimation 2s infinite alternate;	
+}
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;	
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+	opacity: 0;
+	animation: fadeIn 0.2s ease-in-out 0.2s forwards;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+    .nav-links li {
+        text-align: center;
+        width: 100%;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+.dark{
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+	color: #e6e6e6;
+	
+	p{
+		color: white;
+		margin-top:30px;
+		font-family: 'Times New Roman', sans-serif;
+		opacity: 0; 
+		transition: opacity 0.2s ease, transform 0.2s ease;
+	}
+	.box0 {
+	width: 1000px;
+	height: 35px;
+	background-color: red;
+	transition: background-color 0.3s ease;
+	animation: moveAnimation 2s infinite alternate;	
+}
+
+table, th, td {
+		border: 1px solid white;
+		border-collapse: collapse;
+		}
+		
+.description{
+	color:white;
+	font-size: 0.9 em;
+}
+}
+
+table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+		}
+		
+.container {
+display: flex;
+justify-content: space-between;
+}
+		
+.item {
+float: left;
+width: 34%;
+box-sizing: border-box;
+}
+
+a img {
+            width: 200px;
+            height: 200px;
+            border: none;
+            display: block;
+            margin: auto;
+        }
+		
+ul.horizontal-list {
+            display: flex; /* Use flexbox layout */
+            justify-content: center; /* Center the list items */
+            list-style-type: none; /* Remove default list styling */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        ul.horizontal-list li {
+            margin: 0 25px; /* Add spacing between list items */
+        }
+
+        .boxPrime img {
+            display: block;
+            width: 100px; /* Set a fixed width for images */
+            height: auto; /* Maintain aspect ratio */
+        }
+		
+.description{
+	color:black;
+	font-size: 0.9 em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes floatIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+		
+p{
+		color: black;
+		margin-top:30px;
+		font-family: 'Times New Roman', sans-serif;
+		opacity: 0; 
+		transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.h2{
+.box0 {
+	width: 1000px;
+	height: 35px;
+	background-color: red;
+	transition: background-color 0.3s ease;
+	animation: moveAnimation 2s infinite alternate;
+}
+
+form{
+		color: black;
+		margin-top:30px;
+		font-family: 'Times New Roman', sans-serif;
+		opacity: 0; 
+		transition: opacity 0.2s ease, transform 0.2s ease;
+}

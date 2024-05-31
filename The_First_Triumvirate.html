@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figures from the Roman Empire</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">INTO HISTORY</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Into_History.html">Home page</a></li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/About_me.html">About me</a></li>
+			<li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/form_page.html"> Form page</a></li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_First_Triumvirate.html" class="dropbtn">The First Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Julius_Caesar.html">Gaius Julius Caesar</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Gnaeus_Pompeius_Magnus.html">Gnaeus Pompeius Magnus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Licinius_Crassus.html">Marcus Licinius Crassus</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_Second_Triumvirate.html" class="dropbtn">The Second Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Mark_Anthony.html">Mark Anthony</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Lepidus.html">Lepidus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Octavian.html">Octavian</a>
+                </div>
+            </li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Cleopatra.html">Cleopatra</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Greatest Roman Emperors</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Aurelius.html">Marcus Aurelius</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Constantine.html">The Emperor Constantine</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Trajan.html">The Emperor Trajan</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<script src="scripts.js"></script>
+<hr>
+<hr>
+
+<h1>Light/Dark mode</h1>
+<button onclick="myFunction()">Switch Mode</button>
+
+<script>
+	function myFunction(){
+		let element = document.body;
+		element.classList.toggle("dark");
+		
+		if(element.classList.contains("dark")){
+			localStorage.setItem("mode","dark");
+		}
+		else{
+			localStorage.setItem("mode","light");
+		}
+	}
+		
+		document.addEventListener("DOMContentLoaded", () => {
+			let mode = localStorage.getItem("mode");
+			
+			if(mode == "dark"){
+					document.body.classList.add("dark");
+			}
+		});
+		
+				document.addEventListener("DOMContentLoaded", function() {
+            const paragraphs = document.querySelectorAll('p');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            paragraphs.forEach(paragraph => {
+                observer.observe(paragraph);
+            });
+        });
+</script>
+
+<h1> The First Triumvirate, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
+<h2 class = "box0"> General stuff </h2>
+
+<p> The First Triumvirate was an informal political alliance among three prominent politicians in the late Roman Republic: Gnaeus Pompeius Magnus, Marcus Licinius Crassus, and Gaius Julius Caesar. The republican constitution had many veto points. In order to bypass constitutional obstacles and force through the political goals of the three men, they forged in secret an alliance where they promised to use their respective influence to support each other. The "triumvirate" was not a formal magistracy, nor did it achieve a lasting domination over state affairs. </p>
+
+<p> It was formed among the three men due to their mutual need to overcome opposition in the senate against their proposals in the previous years. Initially secret, it emerged publicly during Caesar's first consulship in 59 BC to push through legislation for the three allies. Caesar secured passage of an agrarian law which helped resettle Pompey's veterans, a law ratifying Pompey's settlements after the Third Mithridatic War, and legislation on provincial administration and tax collection. Caesar also was placed in a long-term governorship in Gaul. The early success of the alliance, however, triggered substantial political backlash. Political alliances at Rome reorganised to counterbalance the three men in the coming years. </p>
+
+<p> By 55 BC, the alliance was fraying. The three men, however, came together in mutual interest to renew their pact. By force and with political disruption aided by their allies, they delayed consular elections into 55 BC and intimidated the comitia into electing Pompey and Crassus again as consuls. Caesar's command in Gaul was then renewed for another five years; plum provincial commands placed Pompey in Spain and Crassus in Syria. Amid even stronger backlash at Rome against the use of naked force and chaos to achieve political ends, Crassus died in 53 BC during his failed invasion of Parthia. </p>
+
+<p> Caesar and Pompey, the two remaining allies, maintained friendly relations for a few years. They remained allies even after Pompey's assumption of a sole consulship in 52 BC and the death of Julia (Caesar's daughter and Pompey's wife). Pompey, however, moved to form alliances to counterbalance Caesar's influence after Crassus' death. These drew him slowly into a policy of confrontation with Caesar. Deteriorating trust through 50 BC, along with the influence of Catonian anti-Caesarian hardliners on Pompey, eventually pushed Caesar into open rebellion in January 49 BC. </p>
+<br>
+
+<h2 class = "box0"> Naming </h2>
+<p> The term "First Triumvirate", while well-known, is a misleading one which is regularly avoided by modern scholars of the late republic. Boards of a certain number of men such as decemviri were a feature of Roman administration, but this alliance was not counted among them. The term appears nowhere in any ancient source, refers to no official position, and is "completely and obviously erroneous". In the ancient world, the triple alliance was referred to with varying terms: Cicero, contemporaneously, wrote of "three men" (tris homines) exercising a regnum; a satire by Marcus Terentius Varro called it a "three-headed monster"; later historians such as Suetonius and Livy referred to the three as a societas or conspiratio; the allies themselves "would presumably have referred to it simply as amicitia". </p>
+
+<p> The usage of the term "triumvirate" to describe this political alliance was unattested during the Renaissance. First attested in 1681, the term emerged into widespread use only during the 18th century; for some time, knowledge that the term was a modern coinage was unknown, "revealed" only in 1807. By the 19th century, usage was somewhat regular – mostly in English and French sources, though not in German ones, – usually prefaced with clarifications that the term did not refer to any official position. </p>
+
+<p> More recently, scholars have started to avoid the term in publications altogether. Harriet Flower in Roman Republics writes that "First Triumvirate" is "misleading in equating the position of the 50s with the official triumvirate of Antony, Lepidus, and Octavian", preferring "alliance" and "Big Three". Recent books by Andrew Lintott and Richard Billows also have avoided invocation of "First Triumvirate". Others add more reasons to avoid its use, for example, Robert Morstein-Marx in the recent book Julius Caesar and the Roman People, "it is almost impossible to use the phrase 'First Triumvirate' without adopting some version of the view that it was a kind of conspiracy against the republic... Nomenclature matters... I eschew the traditional 'First Triumvirate' altogether". Classicists writing for more general audience also have shied away from use of the term "First Triumvirate". Mary Beard, for example, uses "Gang of Three" in her 2015 book SPQR. Yet others, such as Adrian Goldsworthy, have not, staying with the traditional nomenclature while explaining that the term is inaccurate. </p>
+
+<p> The fourth edition of the Oxford Classical Dictionary, for example, similarly says "the coalition formed between Caesar, Pompey, and Crassus in 60 BCE was wholly unofficial and never described at the time as a triumvirate... 'First' and 'Second Triumvirate' are modern and misleading terms". </p>
+</body>
+</html>

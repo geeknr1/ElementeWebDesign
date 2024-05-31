@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figures from the Roman Empire</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">INTO HISTORY</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Into_History.html">Home page</a></li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/About_me.html">About me</a></li>
+			<li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/form_page.html"> Form page</a></li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_First_Triumvirate.html" class="dropbtn">The First Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Julius_Caesar.html">Gaius Julius Caesar</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Gnaeus_Pompeius_Magnus.html">Gnaeus Pompeius Magnus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Licinius_Crassus.html">Marcus Licinius Crassus</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_Second_Triumvirate.html" class="dropbtn">The Second Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Mark_Anthony.html">Mark Anthony</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Lepidus.html">Lepidus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Octavian.html">Octavian</a>
+                </div>
+            </li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Cleopatra.html">Cleopatra</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Greatest Roman Emperors</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Aurelius.html">Marcus Aurelius</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Constantine.html">The Emperor Constantine</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Trajan.html">The Emperor Trajan</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<script src="scripts.js"></script>
+<hr>
+<hr>
+
+<h1>Light/Dark mode</h1>
+<button onclick="myFunction()">Switch Mode</button>
+
+<script>
+	function myFunction(){
+		let element = document.body;
+		element.classList.toggle("dark");
+		
+		if(element.classList.contains("dark")){
+			localStorage.setItem("mode","dark");
+		}
+		else{
+			localStorage.setItem("mode","light");
+		}
+	}
+		
+		document.addEventListener("DOMContentLoaded", () => {
+			let mode = localStorage.getItem("mode");
+			
+			if(mode == "dark"){
+					document.body.classList.add("dark");
+			}
+		});
+		
+				document.addEventListener("DOMContentLoaded", function() {
+            const paragraphs = document.querySelectorAll('p');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            paragraphs.forEach(paragraph => {
+                observer.observe(paragraph);
+            });
+        });
+</script>
+
+<h1> Cleopatra, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
+<h2 class = "box0"> General stuff </h2>
+
+<p> Cleopatra VII Thea Philopator (70/69 BC – 10 August 30 BC) was Queen of the Ptolemaic Kingdom of Egypt from 51 to 30 BC, and its last active ruler. A member of the Ptolemaic dynasty, she was a descendant of its founder Ptolemy I Soter, a Macedonian Greek general and companion of Alexander the Great. After the death of Cleopatra, Egypt became a province of the Roman Empire, marking the end of the last Hellenistic-period state in the Mediterranean and of the age that had lasted since the reign of Alexander (336–323 BC). Her first language was Koine Greek, and she was the only known Ptolemaic ruler to learn the Egyptian language. </p>
+
+<p> In 58 BC, Cleopatra presumably accompanied her father, Ptolemy XII Auletes, during his exile to Rome after a revolt in Egypt (a Roman client state) allowed his rival daughter Berenice IV to claim his throne. Berenice was killed in 55 BC when Ptolemy returned to Egypt with Roman military assistance. When he died in 51 BC, the joint reign of Cleopatra and her brother Ptolemy XIII began, but a falling-out between them led to an open civil war. After losing the 48 BC Battle of Pharsalus in Greece against his rival Julius Caesar (a Roman dictator and consul) in Caesar's civil war, the Roman statesman Pompey fled to Egypt. Pompey had been a political ally of Ptolemy XII, but Ptolemy XIII, at the urging of his court eunuchs, had Pompey ambushed and killed before Caesar arrived and occupied Alexandria. Caesar then attempted to reconcile the rival Ptolemaic siblings, but Ptolemy's chief adviser, Potheinos, viewed Caesar's terms as favoring Cleopatra, so his forces besieged her and Caesar at the palace. Shortly after the siege was lifted by reinforcements, Ptolemy XIII died in the Battle of the Nile; Cleopatra's half-sister Arsinoe IV was eventually exiled to Ephesus for her role in carrying out the siege. Caesar declared Cleopatra and her brother Ptolemy XIV joint rulers but maintained a private affair with Cleopatra that produced a son, Caesarion. Cleopatra traveled to Rome as a client queen in 46 and 44 BC, where she stayed at Caesar's villa. After Caesar's assassination, followed shortly afterwards by that of Ptolemy XIV (on Cleopatra's orders), she named Caesarion co-ruler as Ptolemy XV. </p>
+
+<p> In the Liberators' civil war of 43–42 BC, Cleopatra sided with the Roman Second Triumvirate formed by Caesar's grandnephew and heir Octavian, Mark Antony, and Marcus Aemilius Lepidus. After their meeting at Tarsos in 41 BC, the queen had an affair with Antony which produced three children. He carried out the execution of Arsinoe at her request, and became increasingly reliant on Cleopatra for both funding and military aid during his invasions of the Parthian Empire and the Kingdom of Armenia. The Donations of Alexandria declared their children rulers over various erstwhile territories under Antony's triumviral authority. This event, their marriage, and Antony's divorce of Octavian's sister Octavia Minor led to the final war of the Roman Republic. Octavian engaged in a war of propaganda, forced Antony's allies in the Roman Senate to flee Rome in 32 BC, and declared war on Cleopatra. After defeating Antony and Cleopatra's naval fleet at the 31 BC Battle of Actium, Octavian's forces invaded Egypt in 30 BC and defeated Antony, leading to Antony's suicide. When Cleopatra learned that Octavian planned to bring her to his Roman triumphal procession, she killed herself by poisoning, contrary to the popular belief that she was bitten by an asp. </p>
+
+<p> Cleopatra's legacy survives in ancient and modern works of art. Roman historiography and Latin poetry produced a generally critical view of the queen that pervaded later Medieval and Renaissance literature. In the visual arts, her ancient depictions include Roman busts, paintings, and sculptures, cameo carvings and glass, Ptolemaic and Roman coinage, and reliefs. In Renaissance and Baroque art, she was the subject of many works including operas, paintings, poetry, sculptures, and theatrical dramas. She has become a pop culture icon of Egyptomania since the Victorian era, and in modern times, Cleopatra has appeared in the applied and fine arts, burlesque satire, Hollywood films, and brand images for commercial products. </p>
+
+<h2 class = "box0"> Family + Background </h2>
+<p> Cleopatra VII was born in early 69 BC to the ruling Ptolemaic pharaoh Ptolemy XII and an uncertain mother, presumably Ptolemy XII's wife Cleopatra V Tryphaena (who may have been the same person as Cleopatra VI Tryphaena), the mother of Cleopatra's older sister, Berenice IV Epiphaneia. Cleopatra Tryphaena disappears from official records a few months after the birth of Cleopatra in 69 BC. The three younger children of Ptolemy XII, Cleopatra's sister Arsinoe IV and brothers Ptolemy XIII Theos Philopator and Ptolemy XIV, were born in the absence of his wife. Cleopatra's childhood tutor was Philostratos, from whom she learned the Greek arts of oration and philosophy. During her youth Cleopatra presumably studied at the Musaeum, including the Library of Alexandria. </p>
+<p> Ptolemaic pharaohs were crowned by the Egyptian high priest of Ptah at Memphis, but resided in the multicultural and largely Greek city of Alexandria, established by Alexander the Great. They spoke Greek and governed Egypt as Hellenistic Greek monarchs, refusing to learn the native Egyptian language. In contrast, Cleopatra could speak multiple languages by adulthood and was the first Ptolemaic ruler known to learn the Egyptian language. Plutarch implies that she also spoke Ethiopian, the language of the "Troglodytes", Hebrew (or Aramaic), Arabic, the Syrian language (perhaps Syriac), Median, and Parthian, and she could apparently also speak Latin, although her Roman contemporaries would have preferred to speak with her in her native Koine Greek. Aside from Greek, Egyptian, and Latin, these languages reflected Cleopatra's desire to restore North African and West Asian territories that once belonged to the Ptolemaic Kingdom. </p>
+
+<p> Roman interventionism in Egypt predated the reign of Cleopatra. When Ptolemy IX Lathyros died in late 81 BC, he was succeeded by his daughter Berenice III. With opposition building at the royal court against the idea of a sole reigning female monarch, Berenice III accepted joint rule and marriage with her cousin and stepson Ptolemy XI Alexander II, an arrangement made by the Roman dictator Sulla. Ptolemy XI had his wife killed shortly after their marriage in 80 BC, and was lynched soon after in the resulting riot over the assassination. Ptolemy XI, and perhaps his uncle Ptolemy IX or father Ptolemy X Alexander I, willed the Ptolemaic Kingdom to Rome as collateral for loans, so that the Romans had legal grounds to take over Egypt, their client state, after the assassination of Ptolemy XI. The Romans chose instead to divide the Ptolemaic realm among the illegitimate sons of Ptolemy IX, bestowing Cyprus on Ptolemy of Cyprus and Egypt on Ptolemy XII Auletes. </p>
+
+<h2 class = "box0"> Ancestry </h2>
+<p> Cleopatra belonged to the Macedonian Greek dynasty of the Ptolemies, their European origins tracing back to northern Greece. Through her father, Ptolemy XII Auletes, she was a descendant of two prominent companions of Alexander the Great of Macedon: the general Ptolemy I Soter, founder of the Ptolemaic Kingdom of Egypt, and Seleucus I Nicator, the Macedonian Greek founder of the Seleucid Empire of West Asia. While Cleopatra's paternal line can be traced, the identity of her mother is uncertain. She was presumably the daughter of Cleopatra V Tryphaena, the sister-wife of Ptolemy XII who had previously given birth to their daughter Berenice IV. </p>
+
+<p> Cleopatra I Syra was the only member of the Ptolemaic dynasty known for certain to have introduced some non-Greek ancestry. Her mother Laodice III was a daughter born to King Mithridates II of Pontus, a Persian of the Mithridatic dynasty, and his wife Laodice who had a mixed Greek-Persian heritage. Cleopatra I Syra's father Antiochus III the Great was a descendant of Queen Apama, the Sogdian Iranian wife of Seleucus I Nicator. It is generally believed that the Ptolemies did not intermarry with native Egyptians. Michael Grant asserts that there is only one known Egyptian mistress of a Ptolemy and no known Egyptian wife of a Ptolemy, further arguing that Cleopatra probably did not have any Egyptian ancestry and "would have described herself as Greek." </p>
+
+<p> Stacy Schiff writes that Cleopatra was a Macedonian Greek with some Persian ancestry, arguing that it was rare for the Ptolemies to have an Egyptian mistress. Duane W. Roller speculates that Cleopatra could have been the daughter of a theoretical half-Macedonian-Greek, half-Egyptian woman from Memphis in northern Egypt belonging to a family of priests dedicated to Ptah (a hypothesis not generally accepted in scholarship), but contends that whatever Cleopatra's ancestry, she valued her Greek Ptolemaic heritage the most. Ernle Bradford writes that Cleopatra challenged Rome not as an Egyptian woman "but as a civilized Greek." </p>
+
+<p> Claims that Cleopatra was an illegitimate child never appeared in Roman propaganda against her. Strabo was the only ancient historian who claimed that Ptolemy XII's children born after Berenice IV, including Cleopatra, were illegitimate. Cleopatra V (or VI) was expelled from the court of Ptolemy XII in late 69 BC, a few months after the birth of Cleopatra, while Ptolemy XII's three younger children were all born during the absence of his wife. The high degree of inbreeding among the Ptolemies is also illustrated by Cleopatra's immediate ancestry, of which a reconstruction is shown below. </p>
+
+<p> The family tree given below also lists Cleopatra V as a daughter of Ptolemy X Alexander I and Berenice III. This would make her a cousin of her husband, Ptolemy XII, but she could have been a daughter of Ptolemy IX Lathyros, which would have made her a sister-wife of Ptolemy XII instead. The confused accounts in ancient primary sources have also led scholars to number Ptolemy XII's wife as either Cleopatra V or Cleopatra VI; the latter may have actually been a daughter of Ptolemy XII. Fletcher and John Whitehorne assert that this is a possible indication Cleopatra V had died in 69 BC rather than reappearing as a co-ruler with Berenice IV in 58 BC (during Ptolemy XII's exile in Rome). </p>
+</body>
+</html>

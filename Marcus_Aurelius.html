@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figures from the Roman Empire</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">INTO HISTORY</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Into_History.html">Home page</a></li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/About_me.html">About me</a></li>
+			<li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/form_page.html"> Form page</a></li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_First_Triumvirate.html" class="dropbtn">The First Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Julius_Caesar.html">Gaius Julius Caesar</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Gnaeus_Pompeius_Magnus.html">Gnaeus Pompeius Magnus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Licinius_Crassus.html">Marcus Licinius Crassus</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_Second_Triumvirate.html" class="dropbtn">The Second Triumvirate</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Mark_Anthony.html">Mark Anthony</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Lepidus.html">Lepidus</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Octavian.html">Octavian</a>
+                </div>
+            </li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Cleopatra.html">Cleopatra</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Greatest Roman Emperors</a>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Marcus_Aurelius.html">Marcus Aurelius</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Constantine.html">The Emperor Constantine</a>
+                    <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Trajan.html">The Emperor Trajan</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<script src="scripts.js"></script>
+<hr>
+<hr>
+
+<h1>Light/Dark mode</h1>
+<button onclick="myFunction()">Switch Mode</button>
+
+<script>
+	function myFunction(){
+		let element = document.body;
+		element.classList.toggle("dark");
+		
+		if(element.classList.contains("dark")){
+			localStorage.setItem("mode","dark");
+		}
+		else{
+			localStorage.setItem("mode","light");
+		}
+	}
+		
+		document.addEventListener("DOMContentLoaded", () => {
+			let mode = localStorage.getItem("mode");
+			
+			if(mode == "dark"){
+					document.body.classList.add("dark");
+			}
+		});
+		
+				document.addEventListener("DOMContentLoaded", function() {
+            const paragraphs = document.querySelectorAll('p');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            paragraphs.forEach(paragraph => {
+                observer.observe(paragraph);
+            });
+        });
+</script>
+
+<h1> Marcus Aurelius, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
+<h2 class = "box0"> General stuff </h2>
+
+<p> Marcus Aurelius Antoninus (26 April 121 – 17 March 180) was Roman emperor from 161 to 180 and a Stoic philosopher. He was a member of the Nerva–Antonine dynasty, the last of the rulers later known as the Five Good Emperors and the last emperor of the Pax Romana, an age of relative peace, calm, and stability for the Roman Empire lasting from 27 BC to 180 AD. He served as Roman consul in 140, 145, and 161. </p>
+
+<p> Marcus Aurelius was the son of the praetor Marcus Annius Verus and his wife, Domitia Calvilla. He was related through marriage to the emperors Trajan and Hadrian. Marcus's father died when he was three, and he was raised by his mother and paternal grandfather. After Hadrian's adoptive son, Aelius Caesar, died in 138, Hadrian adopted Marcus's uncle Antoninus Pius as his new heir. In turn, Antoninus adopted Marcus and Lucius, the son of Aelius. Hadrian died that year, and Antoninus became emperor. Now heir to the throne, Marcus studied Greek and Latin under tutors such as Herodes Atticus and Marcus Cornelius Fronto. He married Antoninus's daughter Faustina in 145. </p>
+
+<p> After Antoninus died in 161, Marcus Aurelius acceded to the throne alongside his adoptive brother, who reigned under the name Lucius Verus. Under his rule the Roman Empire witnessed heavy military conflict. In the East, the Romans fought successfully with a revitalized Parthian Empire and the rebel Kingdom of Armenia. Marcus defeated the Marcomanni, Quadi, and Sarmatian Iazyges in the Marcomannic Wars; however, these and other Germanic peoples began to represent a troubling reality for the Empire. He reduced the silver purity of the Roman currency, the denarius. The persecution of Christians in the Roman Empire appears to have increased during his reign, but his involvement in this is unlikely since there is no record of early Christians in the 2nd century calling him a persecutor, and Tertullian even called Marcus a "protector of Christians". The Antonine Plague broke out in 165 or 166 and devastated the population of the Roman Empire, causing the deaths of five to ten million people. Lucius Verus may have died from the plague in 169. </p>
+
+<p> Unlike some of his predecessors, Marcus chose not to adopt an heir. His children included Lucilla, who married Lucius, and Commodus, whose succession after Marcus has been a subject of debate among both contemporary and modern historians. The Column and Equestrian Statue of Marcus Aurelius still stand in Rome, where they were erected in celebration of his military victories. Meditations, the writings of "the philosopher" – as contemporary biographers called Marcus – are a significant source of the modern understanding of ancient Stoic philosophy. These writings have been praised by fellow writers, philosophers, monarchs, and politicians centuries after his death. </p>
+<br>
+<h2 class = "box0"> Family + Background </h2>
+<p> Marcus was born in Rome on 26 April 121. His birth name is sometimes given as Marcus Annius Verus, but sources assign this name to him upon his father's death and unofficial adoption by his grandfather, upon his coming of age. He may have been known as "Marcus Annius Catilius Severus", at birth or some point in his youth, or "Marcus Catilius Severus Annius Verus". Upon his adoption by Antoninus as heir to the throne, he was known as "Marcus Aelius Aurelius Verus Caesar" and, upon his ascension, he was "Marcus Aurelius Antoninus Augustus" until his death; Epiphanius of Salamis, in his chronology of the Roman emperors included in his On Weights and Measures, calls him Marcus Aurelius Verus.
+<p> The father of Marcus Aurelius was Marcus Annius Verus (III). The Anni Veri were a Roman family settled in the small colony of Ucubi (Colonia Claritas Iulia Ucubi) south-east of Córdoba in Iberian Baetica (modern Andalusia, Spain); they were of Italic origins, and had legendary claims of descendance from Numa Pompilius. The Anni Veri rose to prominence in Rome in the late 1st century AD. Marcus's great-grandfather Marcus Annius Verus (I) was a senator and (according to the Historia Augusta) ex-praetor; his grandfather Marcus Annius Verus (II) was made patrician in 73–74. Through his grandmother Rupilia Faustina, Marcus was related to the Nerva-Antonine dynasty; Rupilla was the step-daughter of Salonia Matidia, who was the niece of the emperor Trajan. </p>
+
+<p> Marcus's mother, Domitia Lucilla Minor (also known as Domitia Calvilla), was the daughter of the Roman patrician P. Calvisius Tullus and inherited a great fortune (described at length in one of Pliny's letters) from her parents and grandparents. Her inheritance included large brickworks on the outskirts of Rome – a profitable enterprise in an era when the city was experiencing a construction boom – and the Horti Domitia Calvillae (or Lucillae), a villa on the Caelian hill of Rome. Marcus himself was born and raised in the Horti and referred to the Caelian hill as 'My Caelian'. </p>
+
+<p> The adoptive family of Marcus was the gens Aurelia, an old Roman gens, into which Marcus was adopted at the age of 17. Antoninus Pius, his adoptive father, came from the Aurelii Fulvi, a branch of the Aurelii settled in the colony of Nemausus in Roman Gaul. </p>
+<br>
+<h2 class = "box0"> Family </h2>
+<p> Marcus and his wife Faustina had at least 14 children during their 30-year marriage, including two sets of twins. One son and four daughters outlived their father. Their children included: </p>
+<ul>
+	<li> Domitia Faustina (147–151) </li>
+	<li> Titus Aelius Antoninus (149) </li>
+	<li> Titus Aelius Aurelius (149) </li>
+	<li> Annia Aurelia Galeria Lucilla (150), married her father's co-ruler Lucius Verus, then Tiberius Claudius Pompeianus, had issue from both marriages </li>
+	<li> Annia Galeria Aurelia Faustina (born 151), married Gnaeus Claudius Severus, had a son </li>
+	<li> Tiberius Aelius Antoninus (born 152, died before 156) </li>
+	<li> Unknown child (died before 158) </li>
+	<li> Annia Aurelia Fadilla (born 159), married Marcus Peducaeus Plautius Quintillus, had issue </li>
+	<li> Annia Cornificia Faustina Minor (born 160), married Marcus Petronius Sura Mamertinus, had a son </li>
+	<li> Titus Aurelius Fulvus Antoninus (161–165), elder twin brother of Commodus </li>
+	<li> Lucius Aurelius Commodus Antoninus (Commodus) (161–192), twin brother of Titus Aurelius Fulvus Antoninus, later emperor, married Bruttia Crispina, no issue </li>
+	<li> Marcus Annius Verus Caesar (162–169) </li>
+	<li> Hadrianus </li>
+	<li> Vibia Aurelia Sabina (170 – died before 217), married Lucius Antistius Burrus, no issue </li>
+</ul>
+<br>
+<h2> Writings </h2>
+<p> While on campaign between 170 and 180, Marcus wrote his Meditations in Greek as a source for his own guidance and self-improvement. The original title of this work, if it had one, is unknown. 'Meditations' – as well as other titles including 'To Himself' – were adopted later. He had a logical mind, and his notes were representative of Stoic philosophy and spirituality. Meditations is still revered as a literary monument to a government of service and duty. George Long's English translation of Meditations was included in Volume 2 of the Harvard Classics. According to Hays, the book was a favourite of Christina of Sweden, Frederick the Great, John Stuart Mill, Matthew Arnold, and Goethe, and is admired by modern figures such as Wen Jiabao and Bill Clinton. It has been considered by many commentators to be one of the greatest works of philosophy. Meditations sold 16,000 copies in 2012. In 2019, 100,000 copies were sold. </p>
+<p> It is not known how widely Marcus's writings were circulated after his death. There are stray references in the ancient literature to the popularity of his precepts, and Julian the Apostate was well aware of his reputation as a philosopher, though he does not specifically mention Meditations. It survived in the scholarly traditions of the Eastern Church, and the first surviving quotes of the book, as well as the first known reference of it by name ('Marcus's writings to himself') are from Arethas of Caesarea in the 10th century and in the Byzantine Suda (perhaps inserted by Arethas himself). It was first published in 1558 in Zurich by Wilhelm Xylander (né Holzmann), from a manuscript reportedly lost shortly afterwards. The oldest surviving complete manuscript copy is in the Vatican library and dates to the 14th century. </p>
+<br>
+
+</body>
+</html>
