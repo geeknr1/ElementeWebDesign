@@ -1,3 +1,41 @@
+.slider {
+    position: relative;
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+}
+
+.slides img {
+    width: 100%; /* Ensures images take up the full width of the container */
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%; /* Centers the buttons vertically */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
 body {
     margin: 0;
     font-family: Times New Roman;

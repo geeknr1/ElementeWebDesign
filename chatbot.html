@@ -3,17 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figures from the Roman Empire</title>
-    <link rel="stylesheet" href="style.css">
-	<style>
-        body {
-            background: rgb(238,174,202);
-            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-        }
-    </style>
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="chatbot.css">
 </head>
 <body>
-
 <header>
     <nav class="navbar">
         <div class="logo">INTO HISTORY</div>
@@ -52,15 +45,20 @@
     </nav>
 </header>
 
-<h2> Home </h2>
-	<p> You can return to the home page by accessing the following link:<a href = "file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Into_History.html"> Home page </a></p>
-
+<script src="scripts.js"></script>
 <hr>
+    <div class="container">
+        <h1>Chatbot</h1>
+        <div id="chat-box" class="chat-box"></div>
+        <input type="text" id="chat-input" class="chat-input" placeholder="Type a message...">
+        <button id="chat-button" class="chat-button">Send</button>
+    </div>
+    <script src="chatbot.js"></script>
+	
+	<h1>Light/Dark mode</h1>
+	<button onclick="myFunction()">Switch Mode</button>
 
-<h1>Light/Dark mode</h1>
-<button onclick="myFunction()">Switch Mode</button>
-
-<script>
+	<script>
 	function myFunction(){
 		let element = document.body;
 		element.classList.toggle("dark");
@@ -80,23 +78,6 @@
 					document.body.classList.add("dark");
 			}
 		});
-</script>
-
-<br>
-<form action="/submit" method="post" onsubmit="return validateForm()" style="text-align: center;">
-	<p><label>First name: <input name="first_name" /></label></p>
-	<p><label>Last name: <input name="last_name" /></label></p>
-	<p>Gender:
-		<label><input type="radio" name = "Gender" value = "male" />Male</label>
-		<label><input type="radio" name = "Gender" value = "female" />Female</label>
-	</p>
-	<p><label>Email:<input type="email" name="email" /></label></p>
-	<p><label>Date of Birth:<input type="date" name="birthDate"></label></p>
-	<p><label>Address: <textarea name="address" cols="30" rows="3"> </textarea>
-	</label></p>
-	<p><button type="submit">Submit</button></p>
-</form>
-
-<script src = "form_page.js"></script>	
+	</script>
 </body>
 </html>
