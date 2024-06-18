@@ -14,9 +14,9 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Into_History.html">Home page</a></li>
             <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/About_me.html">About me</a></li>
-			<li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/form_page.html"> Form page</a></li>
-			<li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/gallery.html">Gallery</a></li>
-			<li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/chatbot.html">Chatbot</a></li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/form_page.html"> Form page</a></li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/gallery.html">Gallery</a></li>
+            <li><a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/chatbot.html">Chatbot</a></li>
             <li class="dropdown">
                 <a href="file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/The_First_Triumvirate.html" class="dropbtn">The First Triumvirate</a>
                 <div class="dropdown-content">
@@ -46,8 +46,14 @@
     </nav>
 </header>
 
-<script src="scripts.js"></script>
+<main>
+
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton" onclick="searchPosts()">Search for content</button>
+</div>
 <hr>
+
 
 <h1>Light/Dark mode</h1>
 <button onclick="myFunction()">Switch Mode</button>
@@ -94,6 +100,9 @@
             });
         });
 </script>
+
+<script src="backToTop.js"></script>
+<script src="searchPosts.js"></script>
 
 
 <h2 class = "box0" style="text-align: center;"> HOME </h2>
@@ -211,6 +220,9 @@ Now sit back, take some popcorn, and enjoy the info on this blog!!! </p>
 <p> Trajan saw more long term success in Dacia, rather than Messopotamia, since while the holdings in Dacia would persist for more than a century, those in Messopotamia would evaporate as soon as he started to live. He died somewhere in Messopotamia btw. </p>
 </p> For more information on this guy's life click on the following link please: <a class = "boxPrime" href = "file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Trajan.html"><img src="Trajan2.png" alt="Trajan"></a></p>
 <br>
-</section>		
+</section>	
+
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top</button>
+</main>	
 </body>
 </html>

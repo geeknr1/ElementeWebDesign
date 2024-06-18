@@ -47,6 +47,13 @@
 </header>
 
 <script src="scripts.js"></script>
+
+<main>
+
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton" onclick="searchPosts()">Search for content</button>
+</div>
 <hr>
 <hr>
 
@@ -96,6 +103,9 @@
         });
 </script>
 
+<script src="backToTop.js"></script>
+<script src="searchPosts.js"></script>
+
 <h1> Constantine, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
 <h2 class = "box0"> General stuff </h2>
 
@@ -111,7 +121,7 @@
 <h2 class = "box0"> Family + Background </h2>
 Constantine was born in Naissus (today Niš, Serbia), part of the Dardania province of Moesia on 27 February, c.  AD 272. His father was Flavius Constantius[j] an Illyrian who was born in the same region (then called Dacia Ripensis) and a native of the province of Moesia. His original full name, as well as that of his father, is not known. His praenomen is variously given as Lucius, Marcus and Gaius. Whatever the case, praenomina had already disappeared from most public records by this time.[39] He also adopted the name "Valerius", the nomen of emperor Diocletian, following his father's ascension as caesar.
 
-Constantine probably spent little time with his father who was an officer in the Roman army, part of Emperor Aurelian's imperial bodyguard. Being described as a tolerant and politically skilled man, Constantius advanced through the ranks, earning the governorship of Dalmatia from Emperor Diocletian, another of Aurelian's companions from Illyricum, in 284 or 285.[36] Constantine's mother was Helena, a Greek woman of low social standing from Helenopolis of Bithynia.[42][43][44][45][46] It is uncertain whether she was legally married to Constantius or merely his concubine. His main language was Latin, and during his public speeches he needed Greek translators.
+Constantine probably spent little time with his father who was an officer in the Roman army, part of Emperor Aurelian's imperial bodyguard. Being described as a tolerant and politically skilled man, Constantius advanced through the ranks, earning the governorship of Dalmatia from Emperor Diocletian, another of Aurelian's companions from Illyricum, in 284 or 285.[36] Constantine's mother was Helena, a Greek woman of low social standing from Helenopolis of Bithynia. It is uncertain whether she was legally married to Constantius or merely his concubine. His main language was Latin, and during his public speeches he needed Greek translators.
 In July 285, Diocletian declared Maximian, another colleague from Illyricum, his co-emperor. Each emperor would have his own court, his own military and administrative faculties, and each would rule with a separate praetorian prefect as chief lieutenant. Maximian ruled in the West, from his capitals at Mediolanum (Milan, Italy) or Augusta Treverorum (Trier, Germany), while Diocletian ruled in the East, from Nicomedia (İzmit, Turkey). The division was merely pragmatic: the empire was called "indivisible" in official panegyric,[50] and both emperors could move freely throughout the empire. In 288, Maximian appointed Constantius to serve as his praetorian prefect in Gaul. Constantius left Helena to marry Maximian's stepdaughter Theodora in 288 or 289.
 
 Diocletian divided the empire again in 293, appointing two caesars to rule over further subdivisions of East and West. Each would be subordinate to his respective augustus but would act with supreme authority in his assigned lands. This system would later be called the Tetrarchy. Diocletian's first appointee for the office of Caesar was Constantius; his second was Galerius, a native of Felix Romuliana. According to Lactantius, Galerius was a brutal, animalistic man. Although he shared the paganism of Rome's aristocracy, he seemed to them an alien figure, a semi-barbarian. On 1 March, Constantius was promoted to the office of Caesar, and dispatched to Gaul to fight the rebels Carausius and Allectus. In spite of meritocratic overtones, the Tetrarchy retained vestiges of hereditary privilege, and Constantine became the prime candidate for future appointment as Caesar as soon as his father took the position. Constantine went to the court of Diocletian, where he lived as his father's heir presumptive.
@@ -123,6 +133,9 @@ Diocletian divided the empire again in 293, appointing two caesars to rule over 
 
 <p> The Holy Roman Empire reckoned Constantine among the venerable figures of its tradition. In the later Byzantine state, it became a great honor for an emperor to be hailed as a "new Constantine"; ten emperors carried the name, including the last emperor of the Eastern Roman Empire. Charlemagne used monumental Constantinian forms in his court to suggest that he was Constantine's successor and equal. Charlemagne, Henry VIII, Philip II of Spain, Godfrey of Bouillon, House of Capet, House of Habsburg, House of Stuart, Macedonian dynasty and Phokas family claimed descent from Constantine. Geoffrey of Monmouth embroidered a tale that the legendary king of Britain, King Arthur, was also a descendant of Constantine. Constantine acquired a mythic role as a hero and warrior against heathens. His reception as a saint seems to have spread within the Byzantine empire during wars against the Sasanian Persians and the Muslims in the late 6th and 7th century. The motif of the Romanesque equestrian, the mounted figure in the posture of a triumphant Roman emperor, became a visual metaphor in statuary in praise of local benefactors. The name "Constantine" enjoyed renewed popularity in western France in the 11th and 12th centuries. </p>
 
-<p> The Niš Constantine the Great Airport is named in honor of him. A large cross was planned to be built on a hill overlooking Niš, but the project was cancelled.[321] In 2012, a memorial was erected in Niš in his honor. The Commemoration of the Edict of Milan was held in Niš in 2013. The Orthodox Church considers Constantine a saint (Saint Constantine), having a feast day on 21 May, and calls him isapostolos (ισαπόστολος Κωνσταντίνος)—an equal of the Apostles. </p>
+<p> The Niš Constantine the Great Airport is named in honor of him. A large cross was planned to be built on a hill overlooking Niš, but the project was cancelled. In 2012, a memorial was erected in Niš in his honor. The Commemoration of the Edict of Milan was held in Niš in 2013. The Orthodox Church considers Constantine a saint (Saint Constantine), having a feast day on 21 May, and calls him isapostolos (ισαπόστολος Κωνσταντίνος)—an equal of the Apostles. </p>
+
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top</button>
+</main>	
 </body>
 </html>

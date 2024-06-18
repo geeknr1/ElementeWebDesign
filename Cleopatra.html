@@ -47,6 +47,13 @@
 </header>
 
 <script src="scripts.js"></script>
+
+<main>
+
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton" onclick="searchPosts()">Search for content</button>
+</div>
 <hr>
 <hr>
 
@@ -96,6 +103,9 @@
         });
 </script>
 
+<script src="backToTop.js"></script>
+<script src="searchPosts.js"></script>
+
 <h1> Cleopatra, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
 <h2 class = "box0"> General stuff </h2>
 
@@ -123,5 +133,8 @@
 <p> Claims that Cleopatra was an illegitimate child never appeared in Roman propaganda against her. Strabo was the only ancient historian who claimed that Ptolemy XII's children born after Berenice IV, including Cleopatra, were illegitimate. Cleopatra V (or VI) was expelled from the court of Ptolemy XII in late 69 BC, a few months after the birth of Cleopatra, while Ptolemy XII's three younger children were all born during the absence of his wife. The high degree of inbreeding among the Ptolemies is also illustrated by Cleopatra's immediate ancestry, of which a reconstruction is shown below. </p>
 
 <p> The family tree given below also lists Cleopatra V as a daughter of Ptolemy X Alexander I and Berenice III. This would make her a cousin of her husband, Ptolemy XII, but she could have been a daughter of Ptolemy IX Lathyros, which would have made her a sister-wife of Ptolemy XII instead. The confused accounts in ancient primary sources have also led scholars to number Ptolemy XII's wife as either Cleopatra V or Cleopatra VI; the latter may have actually been a daughter of Ptolemy XII. Fletcher and John Whitehorne assert that this is a possible indication Cleopatra V had died in 69 BC rather than reappearing as a co-ruler with Berenice IV in 58 BC (during Ptolemy XII's exile in Rome). </p>
+
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top</button>
+</main>	
 </body>
 </html>

@@ -47,6 +47,13 @@
 </header>
 
 <script src="scripts.js"></script>
+
+<main>
+
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton" onclick="searchPosts()">Search for content</button>
+</div>
 <hr>
 
 <h1>Light/Dark mode</h1>
@@ -95,6 +102,9 @@
         });
 </script>
 
+<script src="backToTop.js"></script>
+<script src="searchPosts.js"></script>
+
 <h1> Marcus Licinius Crassus, written by <cite> 'unknown' author </cite>, posted on 30/3/2024 </h1>
 <h2 class = "box0"> General stuff </h2>
 
@@ -121,5 +131,7 @@
 <p> In Plutarch's account, Pompey was asked to stand for the consulship. Crassus wanted to become his colleague and asked Pompey for his assistance. As said in the Life of Crassus, "Pompey received his request gladly (for he was desirous of having Crassus, in some way or other, always in debt to him for some favor), eagerly promoted his candidature, and finally said in a speech to the assembly that he should be no less grateful to them for the colleague than for the office which he desired." However, in office, they did not remain friendly. They "differed on almost every measure, and by their contentiousness, rendered their consulship barren politically and without achievement." Crassus displayed his wealth by realizing public sacrifices to Hercules, entertaining the populace at 10,000 tables and distributing sufficient grain to last each family three months, an act that had the additional ends of performing a previously made religious vow of a tithe to the demigod Hercules and also to gain support among the members of the popular party. </p>
 <p> In Appian's account, when Crassus ended the rebellion, there was a contention over honors between him and Pompey. Neither men dismissed their armies, with both being candidates for the consulship. Crassus had been praetor as the law of Sulla required. Pompey had been neither praetor nor quaestor, and was only 34 years old, but he had promised the plebeian tribunes to restore much of their power, that had been taken away by Sulla's constitutional reforms. Even when they were both chosen consuls, they did not dismiss their armies stationed near the city. Pompey said that he was awaiting the return of Metellus for his Spanish triumph; Crassus said that Pompey ought to dismiss his army first. In the end, Crassus yielded first, offering Pompey his hand. </p>	
 
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top</button>
+</main>	
 </body>
 </html>

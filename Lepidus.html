@@ -47,6 +47,13 @@
 </header>
 
 <script src="scripts.js"></script>
+
+<main>
+
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton" onclick="searchPosts()">Search for content</button>
+</div>
 <hr>
 <hr>
 
@@ -96,6 +103,9 @@
         });
 </script>
 
+<script src="backToTop.js"></script>
+<script src="searchPosts.js"></script>
+
 <h1> Marcus Aemilius Lepidus, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
 <h2 class = "box0"> General stuff </h2>
 
@@ -115,6 +125,7 @@
 
 <p> When Antony attempted to take control of Cisalpine Gaul (northern Italy) by force and displace Decimus Brutus, the Senate, led by Cicero, called on Lepidus to support Brutus – one of Caesar's killers. Lepidus prevaricated, recommending negotiation with Antony. After Antony's defeat at the Battle of Mutina, the Senate sent word that Lepidus' troops were no longer needed. Antony, however, marched towards Lepidus's province with his remaining forces. Lepidus continued to assure the Senate of his loyalty, but engaged in negotiations with Antony. When the two armies met, large portions of Lepidus's forces joined up with Antony. Lepidus negotiated an agreement with him, while claiming to the Senate that he had no choice. It is unclear whether Lepidus' troops forced him to join with Antony, whether that was always Lepidus's plan, or whether he arranged matters to gauge the situation and make the best deal. </p>
 
-
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top</button>
+</main>	
 </body>
 </html>

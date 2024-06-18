@@ -47,6 +47,13 @@
 </header>
 
 <script src="scripts.js"></script>
+
+<main>
+
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton" onclick="searchPosts()">Search for content</button>
+</div>
 <hr>
 <hr>
 
@@ -96,6 +103,9 @@
         });
 </script>
 
+<script src="backToTop.js"></script>
+<script src="searchPosts.js"></script>
+
 <h1> Trajan, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
 <h2 class = "box0"> General stuff </h2>
 
@@ -118,5 +128,8 @@
 <br>
 <h2 class = "box0"> Legacy </h2>
 <p> Ancient sources on Trajan's personality and accomplishments are unanimously positive. Pliny the Younger, for example, celebrates Trajan in his panegyric as a wise and just emperor and a moral man. Cassius Dio added that he always remained dignified and fair. A third-century emperor, Decius, even received from the Senate the name Trajan as a decoration. After the setbacks of the third century, Trajan, together with Augustus, became in the Later Roman Empire the paragon of the most positive traits of the Imperial order. Many emperors after Trajan would, when they were sworn into office, be wished Felicior Augusto, Melior Traiano ("May you be more fortunate than Augustus and better than Trajan"). The fourth-century emperor Constantine I is credited with calling him a "plant upon every wall" for the many buildings bearing inscriptions with his name. </p>
+
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top</button>
+</main>	
 </body>
 </html>

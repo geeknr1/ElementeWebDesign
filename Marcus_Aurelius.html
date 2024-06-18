@@ -47,6 +47,13 @@
 </header>
 
 <script src="scripts.js"></script>
+
+<main>
+
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton" onclick="searchPosts()">Search for content</button>
+</div>
 <hr>
 <hr>
 
@@ -96,6 +103,9 @@
         });
 </script>
 
+<script src="backToTop.js"></script>
+<script src="searchPosts.js"></script>
+
 <h1> Marcus Aurelius, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
 <h2 class = "box0"> General stuff </h2>
 
@@ -139,5 +149,7 @@
 <p> It is not known how widely Marcus's writings were circulated after his death. There are stray references in the ancient literature to the popularity of his precepts, and Julian the Apostate was well aware of his reputation as a philosopher, though he does not specifically mention Meditations. It survived in the scholarly traditions of the Eastern Church, and the first surviving quotes of the book, as well as the first known reference of it by name ('Marcus's writings to himself') are from Arethas of Caesarea in the 10th century and in the Byzantine Suda (perhaps inserted by Arethas himself). It was first published in 1558 in Zurich by Wilhelm Xylander (né Holzmann), from a manuscript reportedly lost shortly afterwards. The oldest surviving complete manuscript copy is in the Vatican library and dates to the 14th century. </p>
 <br>
 
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top</button>
+</main>	
 </body>
 </html>

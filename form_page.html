@@ -55,6 +55,13 @@
 <h2> Home </h2>
 	<p> You can return to the home page by accessing the following link:<a href = "file:///C:/Users/User/Documents/WEB%20DESIGN%20PROJECT/Into_History.html"> Home page </a></p>
 
+<main>
+
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton" onclick="searchPosts()">Search for content</button>
+</div>
+<hr>
 <hr>
 
 <h1>Light/Dark mode</h1>
@@ -82,6 +89,9 @@
 		});
 </script>
 
+<script src="backToTop.js"></script>
+<script src="searchPosts.js"></script>
+
 <br>
 <form action="/submit" method="post" onsubmit="return validateForm()" style="text-align: center;">
 	<p><label>First name: <input name="first_name" /></label></p>
@@ -98,5 +108,8 @@
 </form>
 
 <script src = "form_page.js"></script>	
+
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top</button>
+</main>	
 </body>
 </html>

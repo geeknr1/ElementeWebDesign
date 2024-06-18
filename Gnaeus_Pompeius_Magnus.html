@@ -47,6 +47,13 @@
 </header>
 
 <script src="scripts.js"></script>
+
+<main>
+
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton" onclick="searchPosts()">Search for content</button>
+</div>
 <hr>
 
 <h1>Light/Dark mode</h1>
@@ -95,6 +102,8 @@
         });
 </script>
 
+<script src="backToTop.js"></script>
+<script src="searchPosts.js"></script>
 <h1> Gnaeus Magnus Pompey, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
 
 <h2 class = "box0"> General stuff </h2>
@@ -133,6 +142,7 @@
 		<li><cite> And besides, he was what? 25? He couldn't stand for a Praetorship even if he wanted to. But like I say, I don't care. I'm fine with it. I'm happy for him. Hooray for Pompey. Pompey the Great. </cite></li>
 	</ul>
 	
-
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top</button>
+</main>
 </body>
 </html>

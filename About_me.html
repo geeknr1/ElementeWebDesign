@@ -47,8 +47,15 @@
 </header>
 
 <script src="scripts.js"></script>
-<hr>
 
+<main>
+
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton" onclick="searchPosts()">Search for content</button>
+</div>
+<hr>
+<hr>
 <h1>Light/Dark mode</h1>
 <button onclick="myFunction()">Switch Mode</button>
 
@@ -74,6 +81,9 @@
 		});
 </script>
 
+<script src="backToTop.js"></script>
+<script src="searchPosts.js"></script>
+
 <br>
 <br>
 
@@ -96,5 +106,8 @@
 	<td>I've obtained a "Cambridge Assesment English" diploma in 2019 with the C1 grade.</td>
   </tr>
 </table>
+
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top</button>
+</main>	
 </body>
 </html>

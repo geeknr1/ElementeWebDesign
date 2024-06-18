@@ -47,6 +47,13 @@
 </header>
 
 <script src="scripts.js"></script>
+
+<main>
+
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton" onclick="searchPosts()">Search for content</button>
+</div>
 <hr>
 
 <h1>Light/Dark mode</h1>
@@ -95,6 +102,8 @@
         });
 </script>
 
+<script src="backToTop.js"></script>
+<script src="searchPosts.js"></script>
 <h1> Gaius Julius Caesar, by <cite> 'unknown' author </cite>, posted on 28/3/2024 </h1>
 
 <h2 class = "box0"> General stuff </h2>
@@ -165,5 +174,7 @@
 	<li><cite> I came to Rome when it was a city of stone ... and left it a city of marble </cite></li>
 </ul>
 </div>
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top</button>
+</main>
 </body>
 </html>

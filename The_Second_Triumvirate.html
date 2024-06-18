@@ -47,6 +47,13 @@
 </header>
 
 <script src="scripts.js"></script>
+
+<main>
+
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton" onclick="searchPosts()">Search for content</button>
+</div>
 <hr>
 <hr>
 
@@ -96,6 +103,9 @@
         });
 </script>
 
+<script src="backToTop.js"></script>
+<script src="searchPosts.js"></script>
+
 <h1> The Second Triumvirate, written by <cite> 'unknown' author </cite>, posted on 29/3/2024 </h1>
 <h2 class = "box0"> General stuff </h2>
 
@@ -107,5 +117,8 @@
 
 <h2 class = "box0"> Naming </h2>
 <p> The name "Second Triumvirate" is a modern misnomer derived from the branding of the political alliance between Pompey, Crassus, and Caesar (created c. 59 BC) as the "First" Triumvirate. This nomenclature was unknown during and before the Renaissance and was first attested in the late 17th century, coming into widespread use only in the following century. Recent books have started to avoid the traditional nomenclature of "First" and "Second" Triumvirates. The Oxford Classical Dictionary, for example, warns "'First' and 'Second Triumvirate' are modern and misleading terms". </p>
+
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Back to Top</button>
+</main>	
 </body>
 </html>
